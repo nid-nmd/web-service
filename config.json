@@ -1,0 +1,10 @@
+{
+    "port": 5000,
+    "bind": "0.0.0.0",
+
+    "service_paths": [
+        "/home/nmd/nmd-projects/audio_compare",
+        "/home/nmd/nmd-projects/face_recognition",
+	"/home/nmd/nmd-projects/blob_detection"
+    ]
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "service": "Face Recognition",
+        "route": "/face/recognise",
+        "type": "external",
+        "request": {
+            "params": {
+                "haar_file": {
+                    "type": "str"
+                },
+                
+                "ext_file": {
+                    "type": "str"
+                },
+                "camera_id": {
+                    "type": "int"
+                },
+                "image_file": {
+                    "type": "file"
+                }
+            }
+        },
+        "response": {
+            "params": {
+                "recognised_label": {
+                    "type": "str"
+                },
+                "confidence": {
+                    "type": "float"
+                },
+                "position": {
+                    "type": "list"
+                }
+            }
+        },
+        "command" : "./build/TrackBlob -image="
+    }
+]
